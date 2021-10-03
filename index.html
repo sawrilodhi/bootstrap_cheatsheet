@@ -1,0 +1,457 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap_cheetsheet </title>
+    <link src="css\bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <style>
+        .navvar{
+            margin-bottom: 20px;
+        }
+        .jumbotron {
+            padding: 10px;
+            background-color: aliceblue;
+        }
+        .blockquote-reverse{
+            text-align: center;
+            background-color: aquamarine;
+            border:2px solid black;
+        }
+        .container-1{
+            border:solid;
+            background-color: grey;
+
+        }
+        .container-1 .row{
+            border:solid;
+            background-color: lightgray;
+            
+        }
+    </style>
+   
+    
+    
+    
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-red
+     bg-warning">
+        <div class="container">
+          <a class="navbar-brand" href="#">Bootstrap_cheetsheet</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      <div class="jumbotron text-center text-capitalize text-success ">
+        <h1 class="display-4">Welcome learner to my website!</h1>
+        <p class="lead">This a bootstrap cheetsheet</p>
+        <a class="btn btn-primary btn-lg" href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" role="button">Learn more</a>
+      </div>
+
+    <!--Typography-->
+    <div class="container">
+        <h1 class="page-header">Hello world <small>Second text</small></h1>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p><p><mark> Pariatur culpa consectetur fuga illo magnam dignissimos</mark> adipisci labore,<mark> dolor quam veritatis illum</mark> aliquam odio eos minus expedita nostrum similique a. Quidem?Lorem ipsum dolor sit amet consectetur <del>adipisicing elit.</del> Tempore, eum! Deleniti omnis repellendus autem aut quisquam quae possimus rem! Consectetur iure dicta repellendus<u> voluptates exercitationem</u> possimus nisi perspiciatis voluptate voluptatem!</p>
+
+
+
+        <hr>
+        
+        <!--Ailgnment & Tansformation-->
+        <p class="text-left text-lowercase">left-aligned-text</p>
+        <p class="text-right text-uppercase">right-aligned-text</p>
+        <p class="text-center text-capitalize"> center-aligned-text</p>
+        <p class="text-justify">Justtified-text</p> 
+        <p class="text-nowrap">no warp text</p>
+        <p class="text-wrap">warp text</p>
+
+        <!--Quick Floats-->
+        <div class="pull-left float"> div floated to right</div>
+        <div class="pull-right float"> div floated to left</div>
+
+
+         <!--- clear floats-->
+         <div class="clearfix"></div>
+
+        <hr>
+
+        <blockquote class="blockquote-reverse">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id corporis accusantium, neque veniam corrupti facere beatae veritatis, </p>
+            <footer>
+                Quote by---<cite title="Jhon Doe">John Doe</cite>
+            </footer>
+        </blockquote>
+
+
+
+        <hr>
+
+         <!----list-->
+        <ul class="list-unstyled">
+            <li>Item one</li>
+            <li>Item two</li>
+            <li>Item three</li>
+            <li>Item foure</li>
+            <li>Item five</li>
+            
+        </ul>
+        
+        <ul class="list-block">
+            <li>Item one</li>
+            <li>Item two</li>
+            <li>Item three</li>
+            <li>Item foure</li>
+            <li>Item five</li>
+            
+        </ul>
+
+        <!----code-->
+        <code>&lt;h1&gt;Heading text&lt;/h1&gt;</code>
+        <br>
+        change the directory with<kbd>cd</kbd>
+        <br>
+        to edit setthing, press <kbd><kbd>ctrl</kbd>+<kbd> , </kbd></kbd> 
+        
+        <hr>
+
+        <!----contextual color-->
+        <p class="text-primary">Hello world></p>
+        <p class="text-success">Hello world></p>
+        <p class="text-info">Hello world></p>
+        <p class="text-warning">Hello world></p>
+        <p class="text-danger">Hello world></p>
+        <p class="text-muted">Hello world></p>
+
+
+         <!----contextual background -color-->
+         <p class="bg-primary">Hello world></p>
+         <p class="bg-success">Hello world></p>
+         <p class="bg-info">Hello world></p>
+         <p class="bg-warning">Hello world></p>
+         <p class="bg-danger">Hello world></p>
+         <p class="bg-muted">Hello world></p>
+
+
+    </div>
+
+    <hr>
+
+
+    <div class="container">
+        <!----Button-->
+        <button class="btn btn-default">button</button>
+        <a href="#" class="btn-default" role="button">link</a>
+        <input type="submit" class="btn btn-default" value="submit">
+
+
+        <!---contextual button-->
+        <button class="btn btn-primary">primary</button>
+        <button class="btn btn-default">default</button>
+        <button class="btn btn-success">success</button>
+        <button class="btn btn-warning">warning</button>
+        <button class="btn btn-danger">danger</button>
+        <button class="btn btn-info">info</button>
+        <button class="btn btn-link btn-primary">link</button>
+
+
+        <hr>
+
+
+        <!---size button-->
+        <button class="btn btn-primary btn-lg">primary</button>
+        <button class="btn btn-default btn-md">default</button>
+        <button class="btn btn-success btn sm">success</button>
+        <button class="btn btn-warning btn-xl"
+        disabled="disabled">default</button>
+
+    </div>
+
+    <hr>
+
+
+    <!-----forms-->
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label>
+                    name
+                </label>
+                <input type="text" class=="form-control" placeholder="add name">
+            </div>
+            <br>
+
+
+            <div class="form-group">
+                <label>
+                   email
+                </label>
+                <input type="text" class=="form-control" placeholder="add email">
+            </div>
+
+            <br>
+
+
+            <div class="form-group">
+                <label>  message </label>
+                <textarea type="text" class=="form-control" placeholder="add message"></textarea>
+            </div>
+
+            <br>
+
+
+            <div class="form-group">
+                <label> gender </label>
+                <select class="form-control" >
+                    <option value="male">male</option>
+                    <option value="femal">femal</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <br>
+
+
+            <div class="form-group">
+                <label>
+                  upload file
+                </label>
+                <input type="file">
+                <p class ="help-file">   Only png and jpg allowed</p>
+                
+            </div>
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox"> ckeck me out.
+                </label>
+                
+            </div>
+
+            <button type="submit" class ="btn btn-primary">submit</button>
+
+        </form>
+
+        <hr>
+        <form>
+            <div class="form-inline">
+                <label>
+                   email
+                </label>
+                <input type="text" class=="form-control" placeholder="add email">
+            </div>
+
+            <br>
+
+            
+            <div class="form-group">
+                <label>
+                  password
+                </label>
+                <input type="password" class=="form-control"  placeholder="add password" >
+            </div>
+
+            <br>
+
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox"> remember me.
+                </label>
+                <br>
+                <button type="submit" class ="btn btn-success">login</button>
+                
+            </div> 
+        </form>
+    </div>
+
+    <hr>
+   <!----tables-->
+
+    <div class="container">
+        <table class="table table-striped table-bordered table-hover table-condensed ">
+            <tr>
+                <th> First name</th>
+                <th> last name</th>
+                <th>age</th>
+            </tr>
+            <tr class="bg-danger">
+                <td> sawri</td>
+                <td> lodhi</td>
+                <td> 20</td>
+            </tr>
+            <tr>
+                <td> sawri</td>
+                <td> lodhi</td>
+                <td> 20</td>
+            </tr>
+            <tr class="bg-warning">
+                <td sawri> sawri</td>
+                <td> lodhi</td>
+                <td> 20</td>
+            </tr>
+            <tr>
+                <td> sawri</td>
+                <td> lodhi</td>
+                <td> 20</td>
+            </tr>
+            <tr class="bg-success"> 
+                <td> sawri</td>
+                <td> lodhi</td>
+                <td> 20</td>
+            </tr>
+        </table>
+
+        <hr>
+        <!-----list group-->
+        <div class="container">
+            <ul class="list-group">
+                <li class="list-group-item">Item one</li>
+                <li class="list-group-item">Item two</li>
+                <li class="list-group-item active">Item three</li>
+                <li class="list-group-item">Item foure</li>
+                <li class="list-group-item">Item five</li>
+                
+            </ul>
+            <br>
+
+            <ul class="list-group">
+                <a href="#" class="list-group-item  active">item one</a>
+                <a href="#" class="list-group-item active">item two</a>
+                <a href="#" class="list-group-item  color: orange">item three</a>
+                <a href="#" class="list-group-item list-group-item: success active ">item four</a>
+                <a href="#" class="list-group-item list-group-item: danger color: green">item five</a>
+            </ul>
+        </div>
+
+        <hr>
+        <div class="container">
+            <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class ="panel-title">title </h3>
+
+            </div>
+            <div class="panel-body">
+                panel content
+            </div>
+            <div class="panel-footer">
+                footer content</div>
+
+        </div>
+
+        <hr>
+        <!---- wills-->
+
+        <div class="well"> hello sawri</div>
+        <div class="well well-lg"> hello sawri</div>
+        <div class="well well-sm"> hello sawri</div>
+
+
+        <hr>
+
+        <!----alerts-->
+        <div class="alert alert-success" role="alert"> a success alert </div>
+        <div class="alert alert-info" role="alert"> a info alert </div>
+        <div class="alert alert-danger" role="alert"> a success alert </div>
+        <div class="alert alert-warning" role="alert"> a alert-warning alert </div>
+     <br>
+
+        <div class="alert alert-warning alert-dismissible" role="alert"> 
+            <button class="close" type=" button" data-dismiss="alert"><span>&times;</span><b> you can close this alert</b></button>
+             
+        </div>
+    </div>
+
+       <hr>
+
+ <!----progress baar-->
+ 
+     <div class="progress"
+          style=" width: 50%"> 50%</div>
+         <div class="progress-bar progress-bar-success progress-bar-striped " active style=" width: 100%"> 50%</div>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <img class="img-thumbnail" style="height: 400px; width:350;" src="my_img\akira-hojo-ZxGdri2EWzk-unsplash.jpg">
+        <img class="img-rounded" style="height: 400px; width:350;  padding:30px;" src="my_img\erda-estremera-eMX1aIAp9Nw-unsplash.jpg">
+    
+        <img class="img-circle " style="height: 400px; width:350; padding:30px;" src="my_img\mrjn-photography-YpZ2cj4s0oo-unsplash.jpg">
+
+    </div>
+    <div  class="container-1">
+        <div class="row">
+            <div class="col-md-8 col-sm-8"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In necessitatibus numquam explicabo nostrum quo odio quae, autem sequi obcaecati quod soluta praesentium neque. Vel!</p></div>
+        
+            <div class="col-md-4 col-sm-4" ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In necessitatibus numquasequi obcaecati quod soluta praesentium neque. Vel!</p></div>
+       </div>
+        <br>
+
+        <div class="row">
+            <div class="col-xl-3 col-3" ><p>Lorem ipsum dolor sit amet consectetur adipisicing autem sequi obcaecati quod soluta praesentium neque. Vel!</p></div>
+        
+        
+
+          <div class="col-xl-3 col-4"><p>Lorem ipsum dolor sit amet consectetur adipisicing  soluta praesentium neque. Vel!</p>
+         </div>
+          <div class="col-xl-3 col-3"><p>Lorem ipsum dolor sit amet consectetur adipisicing autem sequi obcaecati quod soluta praesentium neque. Vel!</p></div>
+        
+        
+
+         <div class="col-xl-3 col-2"><p>Lorem ipsum dolor sit amet consectetur adipisicing  soluta praesentium neque. Vel!</p></div>
+       
+        </div>
+       <hr>
+
+       <blockquote class=" blockquote-reverse" style="font-family: Arial, Helvetica, sans-serif ;">
+        <p>this website only use of revise the bootstarp concept </p>
+        <footer>
+            created by---<cite title="Sawri-lodhi">Sawri lodhi</cite>
+        </footer>
+    </blockquote>
+ 
+    <div style="height:400px"></div>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
+
+   
+</body>
+</html>
+
+   
+
+    
+
+
+
+    
